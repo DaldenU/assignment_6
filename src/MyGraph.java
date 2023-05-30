@@ -34,4 +34,11 @@ public class MyGraph {
         }
     }
 
+    public void removeEdge(int source, int destination){
+        validateVertex(source);
+        validateVertex(destination);
+        adgList[source].remove(destination);
+        adgList[destination].remove(source);
+    }
+
 }
