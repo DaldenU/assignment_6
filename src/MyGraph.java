@@ -26,7 +26,7 @@ public class MyGraph {
 
     public void printEdge(){
         for(int i = 0; i < numOfVertices; i++){
-            System.out.println("Vertex" + i +" connected to: ");
+            System.out.print("Vertex number " + i +" is connected to: ");
             for(int neighbor : adgList[i]){
                 System.out.println(neighbor + " ");
             }
