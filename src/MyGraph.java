@@ -52,4 +52,19 @@ public class MyGraph {
         return adgList[vertex];
     }
 
+    public void DFS(int startVertex){
+        validateVertex(startVertex);
+        boolean[] visited = new boolean[numOfVertices];
+        DFSHelper(startVertex, visited);
+    }
+    private void DFSHelper(int vertex, boolean[] visited){
+        visited[vertex] = true;
+        System.out.println(vertex + " ");
+        for(int neighbor : adgList[vertex]){
+            if(!visited[vertex]){
+                DFSHelper(neighbor, visited);
+            }
+        }
+    }
+
 }
