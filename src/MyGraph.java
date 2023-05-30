@@ -47,4 +47,9 @@ public class MyGraph {
         return adgList[source].contains(destination);
     }
 
+    public LinkedList<Integer> getNeighbor(int vertex){
+        validateVertex(vertex);
+        return adgList[vertex];
+    }
+
 }

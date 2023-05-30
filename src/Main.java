@@ -6,5 +6,6 @@ public class Main {
         myGraph.addEdge(2, 3);
         myGraph.printEdge();
         System.out.println(myGraph.HaveEdge(0,1));
+        System.out.println(myGraph.getNeighbor(2));
     }
 }
