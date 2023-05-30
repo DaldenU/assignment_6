@@ -41,4 +41,10 @@ public class MyGraph {
         adgList[destination].remove(source);
     }
 
+    public boolean HaveEdge(int source, int destination){
+        validateVertex(source);
+        validateVertex(destination);
+        return adgList[source].contains(destination);
+    }
+
 }
